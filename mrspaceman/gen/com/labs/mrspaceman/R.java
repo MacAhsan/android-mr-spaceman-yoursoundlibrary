@@ -1091,11 +1091,10 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f090002;
         public static final int action_menu_presenter=0x7f090003;
         public static final int action_mode_close_button=0x7f090024;
-        public static final int action_settings=0x7f090041;
+        public static final int action_settings=0x7f090042;
         public static final int activity_chooser_view_content=0x7f090025;
         public static final int always=0x7f09000f;
         public static final int beginning=0x7f090016;
-        public static final int boton=0x7f090040;
         public static final int checkbox=0x7f09002d;
         public static final int collapseActionView=0x7f090010;
         public static final int default_activity_button=0x7f090028;
@@ -1108,6 +1107,7 @@ containing a value of this type.
         public static final int expanded_menu=0x7f09002c;
         public static final int frame_player=0x7f09003d;
         public static final int frame_song=0x7f09003c;
+        public static final int gridView=0x7f090040;
         public static final int home=0x7f090000;
         public static final int homeAsUp=0x7f09000a;
         public static final int icon=0x7f09002a;
@@ -1138,6 +1138,7 @@ containing a value of this type.
         public static final int showCustom=0x7f09000b;
         public static final int showHome=0x7f09000c;
         public static final int showTitle=0x7f09000d;
+        public static final int sound_name=0x7f090041;
         public static final int split_action_bar=0x7f09001e;
         public static final int submit_area=0x7f090039;
         public static final int tabMode=0x7f090008;
@@ -1200,7 +1201,8 @@ containing a value of this type.
         public static final int activity_main=0x7f030018;
         public static final int fragment_player=0x7f030019;
         public static final int fragment_song=0x7f03001a;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001b;
+        public static final int grid_sound=0x7f03001b;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001c;
     }
     public static final class menu {
         public static final int main=0x7f0c0000;
@@ -2627,7 +2629,7 @@ containing a value of this type.
          */
         public static final int[] MenuView = {
             0x010100ae, 0x0101012c, 0x0101012d, 0x0101012e,
-            0x0101012f, 0x01010130, 0x01010131, 0x01010438
+            0x0101012f, 0x01010130, 0x01010131, 0x0101052f
         };
         /**
           <p>
