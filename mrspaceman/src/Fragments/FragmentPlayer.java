@@ -19,7 +19,7 @@ import android.widget.Toast;
 public class FragmentPlayer extends Fragment {
 	SeekBar seek_bar;
 	Button stop_btn;
-	MediaPlayer media_player;
+	MediaPlayer media_player  = new MediaPlayer();
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
@@ -39,7 +39,6 @@ public class FragmentPlayer extends Fragment {
 
 
 	public void playSound(String sound){
-		media_player = new MediaPlayer();
 		try {media_player.setDataSource(sound);
 		media_player.prepare();
 		media_player.start();

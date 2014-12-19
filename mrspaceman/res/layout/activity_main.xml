@@ -4,12 +4,13 @@
     android:layout_height="match_parent"
     tools:context="com.labs.mrspaceman.MainActivity">
 
-    <FrameLayout
-        android:id="@+id/frame_song"
+    
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#000000" >
-    </FrameLayout>
+        android:background="#000000"
+        android:layout_height="match_parent" />
 
     <FrameLayout
         android:id="@+id/frame_player"

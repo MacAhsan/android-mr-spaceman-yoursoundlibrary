@@ -26,7 +26,8 @@ public class FragmentSong extends Fragment {
 	Button btn;
 	OnSoundSelected listener;
 	ArrayList<String> arrFiles;
-	String SONG_DIRECTORY = "NASA";
+	private static final String ARG_PARAM1 = "param1";
+	String song_directory = "";
 	GridView grid;
 	public interface OnSoundSelected{
 		public void OnSoundSelected(String sound_url); 
@@ -34,6 +35,14 @@ public class FragmentSong extends Fragment {
 
 	public void setListener(OnSoundSelected listener) {
 		this.listener = listener;
+	}
+
+	public static FragmentSong newInstance(String param1) {
+		FragmentSong fragment = new FragmentSong();
+		Bundle args = new Bundle();
+		args.putString(ARG_PARAM1, param1);
+		fragment.setArguments(args);
+		return fragment;
 	}
 
 
@@ -45,6 +54,9 @@ public class FragmentSong extends Fragment {
 	@Override
 	public void onActivityCreated(Bundle savedInstanceState) {
 		super.onActivityCreated(savedInstanceState);
+		if (getArguments() != null) {
+			song_directory = getArguments().getString(ARG_PARAM1);
+        }
 		init();
 	}
 
@@ -52,7 +64,7 @@ public class FragmentSong extends Fragment {
 		arrFiles = new ArrayList<String>();
 		SongGridAdapter adapter = new SongGridAdapter();
 		grid = (GridView) getView().findViewById(R.id.gridView);
-		final String path = Environment.getExternalStorageDirectory().toString()+"/"+"spaceman"+"/"+SONG_DIRECTORY+"/";
+		final String path = Environment.getExternalStorageDirectory().toString()+"/"+"spaceman"+"/"+song_directory+"/";
 		File f = new File(path);    
 		File file[] = f.listFiles();
 		for (int i=0; i < file.length; i++)

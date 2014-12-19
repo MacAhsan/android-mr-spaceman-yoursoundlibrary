@@ -9,7 +9,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:textColor="#01A9DB"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textColor="#01A9DB" />
 
 </LinearLayout>
